@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/activity_vertical_margin"
+    tools:context="com.example.james.calculator.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/edt_firstNumber"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"/>
+
+        <EditText
+            android:id="@+id/edt_secondNumber"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_plus"
+            android:onClick="plus"
+            android:text="+"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_minus"
+            android:onClick="minus"
+            android:text="-"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_multiply"
+            android:text="*"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_divide"
+            android:onClick="divide"
+            android:text="/"/>
+    </LinearLayout>
+</LinearLayout>
